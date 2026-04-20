@@ -2,11 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=index.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | i-SEAL</title>
+  <title>Updates | i-SEAL</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>Redirecting to <a href="index.html">Home</a>...</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <div class="brand-title">i-SEAL</div>
+        <div class="brand-sub">Kyungpook National University</div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li class="has-dropdown">
+            <a href="members.html">Members</a>
+            <ul class="dropdown-menu">
+        <li><a href="professor.html">Professor</a></li>
+        <li><a href="phd.html">Ph.D. Students</a></li>
+        <li><a href="ms.html">M.S. Students</a></li>
+            </ul>
+          </li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Updates</span>
+      <h1>Updates</h1>
+      <p class="hero-text">Recent updates are not available at this time.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <p class="section-tag">Updates</p>
+        <h2>No recent news</h2>
+        <p class="lead">This page is currently reserved for future laboratory updates.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> i-SEAL Laboratory</div>
+      <div>Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
