@@ -1,34 +1,112 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Members | i-SEAL</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="site-header">
-  <div class="container header-inner">
-    <div>
-      <div class="brand-title">i-SEAL</div>
-      <div class="brand-sub">Kyungpook National University</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members | i-SEAL</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <div class="brand-title">i-SEAL</div>
+        <div class="brand-sub">Kyungpook National University</div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="professor.html">Professor</a></li> -->
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html" class="active">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <!-- <li><a href="news.html">News</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <!--<li><a href="professor.html">Professor</a></li>-->
-        <li><a href="research.html">Research</a></li>
-        <li><a href="members.html" class="active">Members</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <!--<li><a href="news.html">News</a></li>-->
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<section class="page-hero"><div class="container page-hero-inner"><span class="eyebrow">Members</span><h1>Laboratory Members</h1><p>Use this page to separate current members, alumni, and student opportunities clearly.</p></div></section>
-<section class="section"><div class="container"><h2>Current members</h2><div class="member-grid"><div class="card member-card"><div class="role">Professor</div><h3>Ju, Gwanghwi</h3><p>Principal investigator</p></div><div class="card member-card"><div class="role">Ph.D. Student</div><h3>Member Name</h3><p>Research topic or short role description</p></div><div class="card member-card"><div class="role">M.S. Student</div><h3>Member Name</h3><p>Research topic or short role description</p></div><div class="card member-card"><div class="role">Undergraduate Researcher</div><h3>Member Name</h3><p>Research topic or short role description</p></div></div></div></section>
-<section class="section white"><div class="container grid-2"><div class="card"><h3>Alumni</h3><p>Add alumni names, degrees, years, and current affiliations here.</p></div><div class="card"><h3>Join the lab</h3><p>Add contact instructions and any recruitment notes for prospective students here.</p></div></div></section>
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>© <span id="year"></span> i-SEAL Laboratory</div>
-    <div>Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</div>
-  </div>
-</footer>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="eyebrow">Members</span>
+      <h1>Members</h1>
+      <p>Current members of the i-SEAL Laboratory.</p>
+    </div>
+  </section>
 
-<script src="script.js"></script></body></html>
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <p class="section-tag">Professor</p>
+        <h2 style="margin-bottom:8px;">Prof. Ju, Gwanghwi</h2>
+        <p class="lead">School of Electronics Engineering, Kyungpook National University</p>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>Email</strong>
+            <a href="mailto:ghju@knu.ac.kr">ghju@knu.ac.kr</a>
+          </div>
+
+          <div class="info-box">
+            <strong>Phone</strong>
+            +82-53-950-7937
+          </div>
+
+          <div class="info-box">
+            <strong>Office</strong>
+            IT3-301
+          </div>
+
+          <div class="info-box">
+            <strong>Role</strong>
+            Principal Investigator of i-SEAL
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="container">
+      <div class="card">
+        <p class="section-tag">Current Members</p>
+        <h2>Laboratory Members</h2>
+        <p class="lead">Member information will be updated later.</p>
+
+        <div class="grid-2">
+          <div class="info-box">
+            <strong>Ph.D. Students</strong>
+            <p>TBD</p>
+          </div>
+
+          <div class="info-box">
+            <strong>M.S. Students</strong>
+            <p>TBD</p>
+          </div>
+
+          <div class="info-box">
+            <strong>Undergraduate Students</strong>
+            <p>TBD</p>
+          </div>
+
+          <div class="info-box">
+            <strong>Alumni</strong>
+            <p>TBD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> i-SEAL Laboratory</div>
+      <div>Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
