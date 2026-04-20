@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professor | i-SEAL</title>
+  <title>Research | i-SEAL</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,15 +13,22 @@
         <div class="brand-title">i-SEAL</div>
         <div class="brand-sub">Kyungpook National University</div>
       </div>
+
       <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
       <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="professor.html" class="active">Professor</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="members.html">Members</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li class="has-dropdown">
+            <a href="#">Members</a>
+            <ul class="dropdown-menu">
+              <li><a href="professor.html">Professor</a></li>
+              <li><a href="phd.html">Ph.D. Students</a></li>
+              <li><a href="ms.html">M.S. Students</a></li>
+            </ul>
+          </li>
           <li><a href="publications.html">Publications</a></li>
-          <!--<li><a href="news.html">News</a></li>-->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -30,39 +37,36 @@
 
   <section class="page-hero">
     <div class="container page-hero-inner">
-      <span class="eyebrow">Professor</span>
-      <h1>Professor</h1>
-      <p>Basic contact information for the principal investigator of i-SEAL.</p>
+      <span class="eyebrow">Research</span>
+      <h1>Research</h1>
+      <p>Core research directions of the i-SEAL Laboratory.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="card">
-        <p class="section-tag">Professor</p>
-        <h2 style="margin-bottom:8px;">Prof. Ju, Gwanghwi</h2>
-        <p class="lead">School of Electronics Engineering, Kyungpook National University</p>
+      <p class="section-tag">Research Areas</p>
+      <h2>Main research directions</h2>
 
-        <div class="info-grid">
-          <div class="info-box">
-            <strong>Email</strong>
-            <a href="mailto:ghju@knu.ac.kr">ghju@knu.ac.kr</a>
-          </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Semiconductor Materials Fabrication, Spectroscopy, and Characterization</h3>
+          <p>Focus on manufacturing techniques, spectroscopy, and characterization of semiconductor materials.</p>
+        </div>
 
-          <div class="info-box">
-            <strong>Phone</strong>
-            +82-53-950-7937
-          </div>
+        <div class="card">
+          <h3>Surface and Interface Engineering</h3>
+          <p>Research on surface/interface passivation and surface coating strategies for improved semiconductor performance and stability.</p>
+        </div>
 
-          <div class="info-box">
-            <strong>Office</strong>
-            IT3-301
-          </div>
+        <div class="card">
+          <h3>Bandgap Engineering and Minority Carrier Control</h3>
+          <p>Study of bandgap engineering and minority carrier control for advanced semiconductor and energy-related applications.</p>
+        </div>
 
-          <div class="info-box">
-            <strong>Role</strong>
-            Principal Investigator of i-SEAL
-          </div>
+        <div class="card">
+          <h3>Novel Device Prototyping</h3>
+          <p>Prototyping of novel semiconductor devices, including power devices, solar cells, gas sensors, microelectromechanical devices, and photodetectors.</p>
         </div>
       </div>
     </div>
