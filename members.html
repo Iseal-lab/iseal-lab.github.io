@@ -17,9 +17,15 @@
       <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="professor.html">Professor</a></li> -->
           <li><a href="research.html">Research</a></li>
-          <li><a href="members.html" class="active">Members</a></li>
+          <li class="has-dropdown">
+            <a href="members.html" class="active">Members</a>
+            <ul class="dropdown-menu">
+              <li><a href="members.html#professor">Professor</a></li>
+              <li><a href="members.html#phd">Ph.D. Students</a></li>
+              <li><a href="members.html#ms">M.S. Students</a></li>
+            </ul>
+          </li>
           <li><a href="publications.html">Publications</a></li>
           <!-- <li><a href="news.html">News</a></li> -->
           <li><a href="contact.html">Contact</a></li>
@@ -32,11 +38,11 @@
     <div class="container page-hero-inner">
       <span class="eyebrow">Members</span>
       <h1>Members</h1>
-      <p>Current members of the i-SEAL Laboratory.</p>
+      <p>Members of the i-SEAL Laboratory.</p>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="professor">
     <div class="container">
       <div class="card">
         <p class="section-tag">Professor</p>
@@ -45,22 +51,22 @@
 
         <div class="info-grid">
           <div class="info-box">
-            <strong>Email</strong>
+            <strong>Email</strong><br>
             <a href="mailto:ghju@knu.ac.kr">ghju@knu.ac.kr</a>
           </div>
 
           <div class="info-box">
-            <strong>Phone</strong>
+            <strong>Phone</strong><br>
             +82-53-950-7937
           </div>
 
           <div class="info-box">
-            <strong>Office</strong>
+            <strong>Office</strong><br>
             IT3-301
           </div>
 
           <div class="info-box">
-            <strong>Role</strong>
+            <strong>Role</strong><br>
             Principal Investigator of i-SEAL
           </div>
         </div>
@@ -68,32 +74,30 @@
     </div>
   </section>
 
-  <section class="section alt-section">
+  <section class="section alt-section" id="phd">
     <div class="container">
       <div class="card">
-        <p class="section-tag">Current Members</p>
-        <h2>Laboratory Members</h2>
-        <p class="lead">Member information will be updated later.</p>
-
-        <div class="grid-2">
+        <p class="section-tag">Doctoral Students</p>
+        <h2>Ph.D. Students</h2>
+        <div class="info-grid">
           <div class="info-box">
-            <strong>Ph.D. Students</strong>
-            <p>TBD</p>
+            <strong>TBD</strong><br>
+            Student information will be updated later.
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section" id="ms">
+    <div class="container">
+      <div class="card">
+        <p class="section-tag">Master’s Students</p>
+        <h2>M.S. Students</h2>
+        <div class="info-grid">
           <div class="info-box">
-            <strong>M.S. Students</strong>
-            <p>TBD</p>
-          </div>
-
-          <div class="info-box">
-            <strong>Undergraduate Students</strong>
-            <p>TBD</p>
-          </div>
-
-          <div class="info-box">
-            <strong>Alumni</strong>
-            <p>TBD</p>
+            <strong>TBD</strong><br>
+            Student information will be updated later.
           </div>
         </div>
       </div>
