@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M.S. Students | i-SEAL</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260421a">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div>
+      <a class="brand" href="index.html" aria-label="i-SEAL home">
         <div class="brand-title">i-SEAL</div>
         <div class="brand-sub">Kyungpook National University</div>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav class="site-nav">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
-          <li class="has-dropdown">
-            <button class="dropdown-toggle active" type="button">Members</button>
+          <li class="has-dropdown open-on-desktop">
+            <button class="dropdown-toggle active" type="button" aria-expanded="false">Members</button>
             <ul class="dropdown-menu">
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html">Ph.D. Students</a></li>
@@ -46,7 +46,7 @@
       <div class="card">
         <p class="section-tag">Master’s Students</p>
         <h2>M.S. Students</h2>
-        <div class="info-grid">
+        <div class="info-grid single-column">
           <div class="info-box"><strong>TBD</strong><br>Student information will be updated later.</div>
         </div>
       </div>
@@ -60,6 +60,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260421a"></script>
 </body>
 </html>
