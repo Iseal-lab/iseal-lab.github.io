@@ -13,8 +13,12 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li class="has-dropdown">
-            <button class="dropdown-toggle" type="button">Members</button>
-            <ul class="dropdown-menu">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="members-menu">
+              Members
+              <span class="dropdown-caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu" id="members-menu" hidden>
+              <li><a href="members.html">All Members</a></li>
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html">Ph.D. Students</a></li>
               <li><a href="ms.html">M.S. Students</a></li>

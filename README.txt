@@ -1,4 +1,4 @@
-Desktop-only version. Overwrite the files in the root of your GitHub Pages repository.
+GitHub Pages version with fixed Members dropdown navigation.
 
 Files included:
 - index.html
@@ -13,7 +13,10 @@ Files included:
 - styles.css
 - script.js
 
-Important:
-1. Upload the extracted files themselves, not the zip file.
-2. Keep professor.html and remove any old professor(1).html if it exists in the repo.
-3. This version removes the hamburger/mobile behavior and keeps only the Members dropdown.
+What changed:
+1. Members is now a real click-based dropdown menu.
+2. The dropdown no longer depends on hover, so it will not disappear when moving the mouse.
+3. Added an "All Members" entry that links to members.html.
+4. Added outside-click and Escape-to-close behavior.
+
+Upload these extracted files directly to the root of your GitHub Pages repository.
