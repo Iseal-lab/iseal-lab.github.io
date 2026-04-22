@@ -4,65 +4,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const dropdowns = document.querySelectorAll('.has-dropdown');
 
-  dropdowns.forEach(function (dropdown) {
-    const toggle = dropdown.querySelector('.dropdown-toggle');
-    const menu = dropdown.querySelector('.dropdown-menu');
-    if (!toggle || !menu) return;
-
-    function openMenu() {
-      dropdown.classList.add('open');
-      toggle.setAttribute('aria-expanded', 'true');
-      menu.hidden = false;
-    }
-
-    function closeMenu() {
-      dropdown.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      menu.hidden = true;
-    }
-
-    closeMenu();
-
-    toggle.addEventListener('click', function (event) {
-      event.stopPropagation();
-      const isOpen = dropdown.classList.contains('open');
-
-      document.querySelectorAll('.has-dropdown.open').forEach(function (openDropdown) {
-        if (openDropdown !== dropdown) {
-          const openToggle = openDropdown.querySelector('.dropdown-toggle');
-          const openMenu = openDropdown.querySelector('.dropdown-menu');
-          openDropdown.classList.remove('open');
-          if (openToggle) openToggle.setAttribute('aria-expanded', 'false');
-          if (openMenu) openMenu.hidden = true;
-        }
-      });
-
-      if (isOpen) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
+  function closeAll() {
+    dropdowns.forEach(function (item) {
+      item.classList.remove('open');
+      const button = item.querySelector('.dropdown-toggle');
+      if (button) button.setAttribute('aria-expanded', 'false');
     });
+  }
 
-    menu.addEventListener('click', function (event) {
+  dropdowns.forEach(function (item) {
+    const button = item.querySelector('.dropdown-toggle');
+    if (!button) return;
+
+    button.addEventListener('click', function (event) {
       event.stopPropagation();
-    });
-
-    dropdown.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') {
-        closeMenu();
-        toggle.focus();
+      const isOpen = item.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        item.classList.add('open');
+        button.setAttribute('aria-expanded', 'true');
       }
     });
   });
 
   document.addEventListener('click', function () {
-    document.querySelectorAll('.has-dropdown.open').forEach(function (dropdown) {
-      const toggle = dropdown.querySelector('.dropdown-toggle');
-      const menu = dropdown.querySelector('.dropdown-menu');
-      dropdown.classList.remove('open');
-      if (toggle) toggle.setAttribute('aria-expanded', 'false');
-      if (menu) menu.hidden = true;
-    });
+    closeAll();
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeAll();
   });
 });

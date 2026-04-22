@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>i-SEAL Laboratory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <div>
         <div class="brand-title">i-SEAL</div>
@@ -18,11 +21,8 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li class="has-dropdown">
-            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="members-menu">
-              Members
-              <span class="dropdown-caret" aria-hidden="true">▾</span>
-            </button>
-            <ul class="dropdown-menu" id="members-menu" hidden>
+            <button class="dropdown-toggle" type="button" aria-expanded="false">Members</button>
+            <ul class="dropdown-menu">
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html">Ph.D. Students</a></li>
               <li><a href="ms.html">M.S. Students</a></li>
@@ -35,25 +35,42 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero hero-home">
     <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Laboratory</span>
-        <h1>Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</h1>
+      <div class="hero-copy">
+        <span class="eyebrow">Semiconductor Research Laboratory</span>
+        <h1>Intelligent Semiconductor Energy Engineering and Analysis Laboratory</h1>
         <p class="hero-text">
-          i-SEAL is an international and interdisciplinary laboratory at Kyungpook National University.
-          The laboratory conducts research on semiconductor materials, spectroscopy and characterization,
-          surface and interface engineering, bandgap engineering, minority carrier control, and the
-          prototyping of novel devices.
+          i-SEAL conducts interdisciplinary research spanning semiconductor materials, spectroscopy and characterization,
+          surface and interface engineering, minority carrier control, and the prototyping of next-generation devices.
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="research.html">View Research</a>
+          <a class="btn btn-secondary" href="contact.html">Contact</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-label">Focus</span>
+            <strong>Materials to Devices</strong>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Approach</span>
+            <strong>Interdisciplinary Research</strong>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Scope</span>
+            <strong>Energy & Semiconductor Systems</strong>
+          </div>
+        </div>
       </div>
 
-      <aside class="hero-card">
+      <aside class="hero-card spotlight-card">
+        <span class="section-tag">Research Scope</span>
         <h3>At a glance</h3>
-        <ul>
-          <li>International and interdisciplinary research team</li>
-          <li>Semiconductor materials, spectroscopy, and characterization</li>
-          <li>Surface/interface passivation, bandgap engineering, and minority carrier control</li>
+        <ul class="list-plain feature-list">
+          <li>Semiconductor materials fabrication, spectroscopy, and characterization</li>
+          <li>Surface and interface passivation strategies</li>
+          <li>Bandgap engineering and minority carrier control</li>
           <li>Power devices, solar cells, gas sensors, MEMS, and photodetectors</li>
         </ul>
       </aside>
@@ -62,38 +79,40 @@
 
   <section class="section">
     <div class="container">
-      <p class="section-tag">About</p>
-      <h2>About i-SEAL</h2>
-      <p class="section-lead">
-        i-SEAL works across semiconductor materials, interfaces, and device applications.
-        The laboratory pursues interdisciplinary research and training in semiconductor-energy-related fields.
-      </p>
+      <div class="section-head">
+        <div>
+          <p class="section-tag">About</p>
+          <h2>About i-SEAL</h2>
+        </div>
+        <p class="section-lead narrow">
+          The laboratory integrates materials science, device engineering, and analysis-driven research for semiconductor-energy-related applications.
+        </p>
+      </div>
 
       <div class="grid-3">
-        <div class="card">
+        <div class="card accent-card">
           <span class="badge">Team</span>
           <h3>International and interdisciplinary group</h3>
           <p>
-            The laboratory brings together researchers and students from interdisciplinary backgrounds
-            including electronics and electrical engineering, computing, physics, chemistry, and mathematics.
+            Researchers and students contribute from electronics, electrical engineering, computing, physics,
+            chemistry, and mathematics.
           </p>
         </div>
 
-        <div class="card">
+        <div class="card accent-card">
           <span class="badge">Recruitment</span>
           <h3>Open to multiple levels</h3>
           <p>
-            The laboratory recruits full-time research staff and engineers, postdoctoral researchers,
-            postgraduate students, and undergraduate students.
+            The laboratory welcomes research staff, postdoctoral researchers, postgraduate students,
+            and undergraduate students.
           </p>
         </div>
 
-        <div class="card">
+        <div class="card accent-card">
           <span class="badge">Vision</span>
           <h3>Semiconductor energy initiatives</h3>
           <p>
-            The laboratory develops and promotes semiconductor energy initiatives through materials research,
-            interface engineering, and novel device prototyping.
+            i-SEAL advances materials research, interface engineering, and novel device prototyping toward future semiconductor-energy systems.
           </p>
         </div>
       </div>
@@ -103,10 +122,10 @@
   <section class="section alt-section">
     <div class="container">
       <div class="grid-2">
-        <div class="card">
+        <div class="card feature-panel">
           <p class="section-tag">Research Highlights</p>
           <h3>Core research directions</h3>
-          <ul class="list-plain">
+          <ul class="list-plain feature-list">
             <li>Semiconductor materials fabrication, spectroscopy, and characterization</li>
             <li>Surface and interface engineering</li>
             <li>Bandgap engineering and minority carrier control</li>
@@ -114,17 +133,17 @@
           </ul>
         </div>
 
-        <div class="card">
-          <p class="section-tag">Quick Links</p>
-          <h3>Explore the laboratory</h3>
-          <ul class="list-plain">
-            <li><a href="research.html">Research</a></li>
-            <li><a href="professor.html">Professor</a></li>
-            <li><a href="phd.html">Ph.D. Students</a></li>
-            <li><a href="ms.html">M.S. Students</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="card feature-panel dark-panel">
+          <p class="section-tag">Explore</p>
+          <h3>Laboratory pages</h3>
+          <div class="quick-links-grid">
+            <a href="research.html">Research</a>
+            <a href="professor.html">Professor</a>
+            <a href="phd.html">Ph.D. Students</a>
+            <a href="ms.html">M.S. Students</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </div>
@@ -137,6 +156,6 @@
     </div>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

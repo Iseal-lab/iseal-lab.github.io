@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | i-SEAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <div>
         <div class="brand-title">i-SEAL</div>
@@ -18,11 +21,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li class="has-dropdown">
-            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="members-menu">
-              Members
-              <span class="dropdown-caret" aria-hidden="true">▾</span>
-            </button>
-            <ul class="dropdown-menu" id="members-menu" hidden>
+            <button class="dropdown-toggle" type="button" aria-expanded="false">Members</button>
+            <ul class="dropdown-menu">
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html">Ph.D. Students</a></li>
               <li><a href="ms.html">M.S. Students</a></li>
@@ -45,9 +45,9 @@
 
   <section class="section">
     <div class="container">
-      <div class="card">
+      <div class="card contact-card">
         <p class="section-tag">Laboratory Contact</p>
-        <h2 style="margin-bottom:8px;">i-SEAL Laboratory</h2>
+        <h2>i-SEAL Laboratory</h2>
         <p class="lead">Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</p>
         <div class="info-grid">
           <div class="info-box"><strong>Email</strong><br><a href="mailto:ghju@knu.ac.kr">ghju@knu.ac.kr</a></div>
@@ -62,12 +62,12 @@
   <section class="section alt-section">
     <div class="container">
       <div class="grid-2">
-        <div class="card">
+        <div class="card accent-card">
           <p class="section-tag">Inquiry</p>
           <h3>Research and collaboration</h3>
           <p>Please contact the laboratory by email for research inquiries, collaboration opportunities, and general academic communication.</p>
         </div>
-        <div class="card">
+        <div class="card accent-card">
           <p class="section-tag">Students</p>
           <h3>Student inquiries</h3>
           <p>Prospective students and researchers may use the same contact information for general inquiries related to the laboratory.</p>
@@ -83,6 +83,6 @@
     </div>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

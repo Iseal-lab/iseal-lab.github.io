@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | i-SEAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <div>
         <div class="brand-title">i-SEAL</div>
@@ -18,11 +21,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html" class="active">Research</a></li>
           <li class="has-dropdown">
-            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="members-menu">
-              Members
-              <span class="dropdown-caret" aria-hidden="true">▾</span>
-            </button>
-            <ul class="dropdown-menu" id="members-menu" hidden>
+            <button class="dropdown-toggle" type="button" aria-expanded="false">Members</button>
+            <ul class="dropdown-menu">
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html">Ph.D. Students</a></li>
               <li><a href="ms.html">M.S. Students</a></li>
@@ -45,22 +45,31 @@
 
   <section class="section">
     <div class="container">
-      <p class="section-tag">Research Areas</p>
-      <h2>Main research directions</h2>
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Research Areas</p>
+          <h2>Main research directions</h2>
+        </div>
+        <p class="section-lead narrow">The laboratory connects semiconductor materials, interfaces, and device-level implementation through experimental and analytical research.</p>
+      </div>
       <div class="grid-2">
-        <div class="card">
+        <div class="card research-card">
+          <span class="mini-tag">Area 01</span>
           <h3>Semiconductor Materials Fabrication, Spectroscopy, and Characterization</h3>
           <p>Focus on manufacturing techniques, spectroscopy, and characterization of semiconductor materials.</p>
         </div>
-        <div class="card">
+        <div class="card research-card">
+          <span class="mini-tag">Area 02</span>
           <h3>Surface and Interface Engineering</h3>
           <p>Research on surface/interface passivation and surface coating strategies for improved semiconductor performance and stability.</p>
         </div>
-        <div class="card">
+        <div class="card research-card">
+          <span class="mini-tag">Area 03</span>
           <h3>Bandgap Engineering and Minority Carrier Control</h3>
           <p>Study of bandgap engineering and minority carrier control for advanced semiconductor and energy-related applications.</p>
         </div>
-        <div class="card">
+        <div class="card research-card">
+          <span class="mini-tag">Area 04</span>
           <h3>Novel Device Prototyping</h3>
           <p>Prototyping of novel semiconductor devices, including power devices, solar cells, gas sensors, microelectromechanical devices, and photodetectors.</p>
         </div>
@@ -75,6 +84,6 @@
     </div>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
