@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <div>
         <div class="brand-title">i-SEAL</div>
@@ -42,11 +42,20 @@
 
   <section class="section">
     <div class="container">
-      <div class="card">
-        <p class="section-tag">Doctoral Students</p>
-        <h2>Ph.D. Students</h2>
-        <div class="info-grid">
-          <div class="info-box"><strong>TBD</strong><br>Student information will be updated later.</div>
+      <div class="card" style="padding: 28px;">
+        <div style="display:grid; grid-template-columns: 220px minmax(0,1fr); gap: 28px; align-items: start;">
+          <div style="width:100%; aspect-ratio: 3 / 4; border:1px solid var(--line); border-radius:16px; background: var(--surface-soft); display:flex; align-items:center; justify-content:center; color: var(--muted); font-weight:600;">
+            Photo
+          </div>
+          <div>
+            <p class="section-tag">Doctoral Student</p>
+            <h2 style="margin-bottom: 10px;">DING LIANGXIAO</h2>
+            <p style="margin: 0; color: var(--muted);">Ph.D. Student</p>
+            <div style="margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line);">
+              <strong>Research Interests</strong>
+              <p style="margin: 10px 0 0; color: var(--muted);">Pressure sensing, flexible materials, simulation, and optimization.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -59,6 +68,6 @@
     </div>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
