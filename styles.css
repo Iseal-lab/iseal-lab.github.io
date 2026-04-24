@@ -149,13 +149,37 @@ a:hover { text-decoration: none; }
   color: var(--accent);
 }
 
-.hero, .page-hero {
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(196, 212, 234, 0.8);
+  background:
+    linear-gradient(90deg, rgba(12, 25, 48, 0.72) 0%, rgba(12, 25, 48, 0.50) 42%, rgba(12, 25, 48, 0.18) 100%),
+    url("images/home-hero.png") center center / cover no-repeat;
+}
+
+.page-hero {
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid rgba(196, 212, 234, 0.8);
   background:
     linear-gradient(135deg, rgba(236, 244, 255, 0.95) 0%, rgba(248, 251, 255, 0.98) 55%, rgba(239, 245, 255, 0.96) 100%);
 }
+
+.hero .eyebrow {
+  color: #dbeafe;
+}
+
+.hero h1 {
+  color: #ffffff;
+  max-width: 12ch;
+}
+
+.hero .hero-text {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 62ch;
+}
+
 .hero::before,
 .page-hero::before {
   content: "";
