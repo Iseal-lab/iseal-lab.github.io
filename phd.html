@@ -5,36 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ph.D. Students | i-SEAL</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .member-stack {
-      display: grid;
-      gap: 24px;
-    }
-    .member-row {
-      display: grid;
-      grid-template-columns: 180px minmax(0, 1fr);
-      gap: 24px;
-      align-items: start;
-    }
-    .member-photo {
-      width: 180px;
-      aspect-ratio: 3 / 4;
-      border: 1px dashed var(--line);
-      border-radius: 14px;
-      background: var(--surface-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    .member-meta p {
-      margin: 0 0 10px;
-    }
-    .member-meta p:last-child {
-      margin-bottom: 0;
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +23,7 @@
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html" class="active">Ph.D. Students</a></li>
               <li><a href="ms.html">M.S. Students</a></li>
+              <li><a href="alumni.html">Alumni</a></li>
             </ul>
           </li>
           <li><a href="publications.html">Publications</a></li>
@@ -72,42 +43,56 @@
 
   <section class="section">
     <div class="container">
-      <div class="member-stack">
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Ph.D. Student</p>
-              <h2 style="margin-bottom: 10px;">DING LIANGXIAO</h2>
-              <p><a href="mailto:fugacedlx@knu.ac.kr">fugacedlx@knu.ac.kr</a></p>
-              <p><strong>Research Direction</strong><br>Capacitive pressure sensors; flexible organic materials; multiphysics simulation; structure and performance optimization</p>
+      <div style="display:grid; gap:24px;">
+
+        <div class="card" style="padding:28px;">
+          <div style="display:grid; grid-template-columns:220px minmax(0,1fr); gap:28px; align-items:start;">
+            <div style="width:100%; aspect-ratio:3 / 4; border:1px solid var(--line); border-radius:16px; background:var(--surface-soft); display:flex; align-items:center; justify-content:center; color:var(--muted); font-weight:600;">Photo</div>
+            <div>
+              <p class="section-tag">Doctoral Student</p>
+              <h2 style="margin-bottom:10px;">DING LIANGXIAO</h2>
+              <p style="margin:0; color:var(--muted);">Ph.D. Student</p>
+              <p style="margin:8px 0 0;"><a href="mailto:fugacedlx@knu.ac.kr">fugacedlx@knu.ac.kr</a></p>
+              <div style="margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">
+                <strong>Research Direction</strong>
+                <p style="margin:10px 0 0; color:var(--muted);">Pressure sensing, flexible materials, simulation, and optimization.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Ph.D. Student</p>
-              <h2 style="margin-bottom: 10px;">ZHENG YUXUN</h2>
-              <p><a href="mailto:hahexknu@knu.ac.kr">hahexknu@knu.ac.kr</a></p>
-              <p><strong>Research Direction</strong><br>Artificial intelligence; deep learning-based semiconductor defect detection; chip inspection</p>
+        <div class="card" style="padding:28px;">
+          <div style="display:grid; grid-template-columns:220px minmax(0,1fr); gap:28px; align-items:start;">
+            <div style="width:100%; aspect-ratio:3 / 4; border:1px solid var(--line); border-radius:16px; background:var(--surface-soft); display:flex; align-items:center; justify-content:center; color:var(--muted); font-weight:600;">Photo</div>
+            <div>
+              <p class="section-tag">Doctoral Student</p>
+              <h2 style="margin-bottom:10px;">ZHENG YUXUN</h2>
+              <p style="margin:0; color:var(--muted);">Ph.D. Student</p>
+              <p style="margin:8px 0 0;"><a href="mailto:hahexknu@knu.ac.kr">hahexknu@knu.ac.kr</a></p>
+              <div style="margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">
+                <strong>Research Direction</strong>
+                <p style="margin:10px 0 0; color:var(--muted);">Artificial intelligence, deep learning-based semiconductor defect detection, and chip inspection.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Ph.D. Student</p>
-              <h2 style="margin-bottom: 10px;">TANG HU</h2>
-              <p><a href="mailto:t1684060651@knu.ac.kr">t1684060651@knu.ac.kr</a></p>
-              <p><strong>Research Direction</strong><br>Solar cell modeling (TCAD); sensing material characterization and analysis</p>
+        <div class="card" style="padding:28px;">
+          <div style="display:grid; grid-template-columns:220px minmax(0,1fr); gap:28px; align-items:start;">
+            <div style="width:100%; aspect-ratio:3 / 4; border:1px solid var(--line); border-radius:16px; background:var(--surface-soft); display:flex; align-items:center; justify-content:center; color:var(--muted); font-weight:600;">Photo</div>
+            <div>
+              <p class="section-tag">Doctoral Student</p>
+              <h2 style="margin-bottom:10px;">TANG HU</h2>
+              <p style="margin:0; color:var(--muted);">Ph.D. Student</p>
+              <p style="margin:8px 0 0;"><a href="mailto:t1684060651@knu.ac.kr">t1684060651@knu.ac.kr</a></p>
+              <div style="margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">
+                <strong>Research Direction</strong>
+                <p style="margin:10px 0 0; color:var(--muted);">Solar cell modeling (TCAD) and sensing material characterization and analysis.</p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
