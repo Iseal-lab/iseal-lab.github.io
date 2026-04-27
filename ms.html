@@ -5,39 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M.S. Students | i-SEAL</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .member-stack {
-      display: grid;
-      gap: 24px;
-    }
-    .member-row {
-      display: grid;
-      grid-template-columns: 180px minmax(0, 1fr);
-      gap: 24px;
-      align-items: start;
-    }
-    .member-photo {
-      width: 180px;
-      aspect-ratio: 3 / 4;
-      border: 1px dashed var(--line);
-      border-radius: 14px;
-      background: var(--surface-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    .member-meta p {
-      margin: 0 0 10px;
-    }
-    .member-meta p:last-child {
-      margin-bottom: 0;
-    }
-  </style>
 </head>
 <body>
-  <header class="site-header">
+    <header class="site-header">
     <div class="container header-inner">
       <div>
         <div class="brand-title">i-SEAL</div>
@@ -53,6 +23,7 @@
               <li><a href="professor.html">Professor</a></li>
               <li><a href="phd.html">Ph.D. Students</a></li>
               <li><a href="ms.html" class="active">M.S. Students</a></li>
+              <li><a href="alumni.html">Alumni</a></li>
             </ul>
           </li>
           <li><a href="publications.html">Publications</a></li>
@@ -72,28 +43,14 @@
 
   <section class="section">
     <div class="container">
-      <div class="member-stack">
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Master’s Student</p>
-              <h2 style="margin-bottom: 10px;">YEHUALA GETASEW ASSEFA</h2>
-              <p><a href="mailto:getass2012@gmail.com">getass2012@gmail.com</a></p>
-              <p><strong>Research Direction</strong><br>Solar energy conversion, focusing on optical and electrical performance enhancement in photovoltaic devices.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Master’s Student</p>
-              <h2 style="margin-bottom: 10px;">DING ZHENYU</h2>
-              <p><a href="mailto:ding@knu.ac.kr">ding@knu.ac.kr</a></p>
-              <p><strong>Research Direction</strong><br>Gallium oxide materials; Schottky barrier diodes; next-generation power electronics</p>
-            </div>
+      <div class="card">
+        <p class="section-tag">Master’s Students</p>
+        <h2>M.S. Students</h2>
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>YEHUALA GETASEW ASSEFA</strong><br>
+            <a href="mailto:getass2012@gmail.com">getass2012@gmail.com</a><br><br>
+            Solar energy conversion, focusing on optical and electrical performance enhancement in photovoltaic devices.
           </div>
         </div>
       </div>
@@ -107,6 +64,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
