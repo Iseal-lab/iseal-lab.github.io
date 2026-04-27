@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni | i-SEAL</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .member-stack {
+      display: grid;
+      gap: 24px;
+    }
+    .member-row {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+    .member-photo {
+      width: 180px;
+      aspect-ratio: 3 / 4;
+      border: 1px dashed var(--line);
+      border-radius: 14px;
+      background: var(--surface-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .member-meta p {
+      margin: 0 0 10px;
+    }
+    .member-meta p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <div class="brand-title">i-SEAL</div>
+        <div class="brand-sub">Kyungpook National University</div>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle active" type="button">Members</button>
+            <ul class="dropdown-menu">
+              <li><a href="professor.html">Professor</a></li>
+              <li><a href="phd.html">Ph.D. Students</a></li>
+              <li><a href="ms.html">M.S. Students</a></li>
+              <li><a href="alumni.html" class="active">Alumni</a></li>
+            </ul>
+          </li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="eyebrow">Members</span>
+      <h1>Alumni</h1>
+      <p>Former members of the i-SEAL Laboratory and their current destinations.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="member-stack">
+        <div class="card">
+          <div class="member-row">
+            <div class="member-photo">Photo</div>
+            <div class="member-meta">
+              <p class="section-tag">Alumni</p>
+              <h2 style="margin-bottom: 10px;">Example Alumni</h2>
+              <p><strong>Former Degree</strong><br>M.S. Student</p>
+              <p><strong>Current Destination</strong><br>SK hynix</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="member-row">
+            <div class="member-photo">Photo</div>
+            <div class="member-meta">
+              <p class="section-tag">Alumni</p>
+              <h2 style="margin-bottom: 10px;">Example Alumni</h2>
+              <p><strong>Former Degree</strong><br>Ph.D. Student</p>
+              <p><strong>Current Destination</strong><br>TBD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> i-SEAL Laboratory</div>
+      <div>Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
