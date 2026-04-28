@@ -5,36 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alumni | i-SEAL</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .member-stack {
-      display: grid;
-      gap: 24px;
-    }
-    .member-row {
-      display: grid;
-      grid-template-columns: 180px minmax(0, 1fr);
-      gap: 24px;
-      align-items: start;
-    }
-    .member-photo {
-      width: 180px;
-      aspect-ratio: 3 / 4;
-      border: 1px dashed var(--line);
-      border-radius: 14px;
-      background: var(--surface-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    .member-meta p {
-      margin: 0 0 10px;
-    }
-    .member-meta p:last-child {
-      margin-bottom: 0;
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
@@ -67,33 +37,48 @@
     <div class="container page-hero-inner">
       <span class="eyebrow">Members</span>
       <h1>Alumni</h1>
-      <p>Former members of the i-SEAL Laboratory and their current destinations.</p>
+      <p>Former members of the i-SEAL Laboratory and their current affiliations or professional status.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="member-stack">
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Alumni</p>
-              <h2 style="margin-bottom: 10px;">Example Alumni</h2>
-              <p><strong>Former Degree</strong><br>M.S. Student</p>
-              <p><strong>Current Destination</strong><br>SK hynix</p>
+      <div class="card">
+        <p class="section-tag">Alumni</p>
+        <h2>Alumni</h2>
+        <p class="lead" style="margin-bottom: 28px;">At present, the laboratory has no Ph.D. alumni.</p>
+
+        <div style="display:grid; gap:24px;">
+          <div class="card">
+            <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+              <div style="width:120px; height:150px; border:1px solid var(--line); border-radius:14px; background: var(--surface-soft); flex-shrink:0;"></div>
+              <div style="flex:1; min-width:260px;">
+                <h3 style="margin-bottom:10px;">CUI JIE</h3>
+                <p class="lead" style="margin:0 0 10px 0;">Former M.S. Student (Graduated in August 2024)</p>
+                <p style="margin:0;"><strong>Current Affiliation</strong><br>Hyundai Elevator (China) Co., Ltd., Shanghai</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="member-row">
-            <div class="member-photo">Photo</div>
-            <div class="member-meta">
-              <p class="section-tag">Alumni</p>
-              <h2 style="margin-bottom: 10px;">Example Alumni</h2>
-              <p><strong>Former Degree</strong><br>Ph.D. Student</p>
-              <p><strong>Current Destination</strong><br>TBD</p>
+          <div class="card">
+            <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+              <div style="width:120px; height:150px; border:1px solid var(--line); border-radius:14px; background: var(--surface-soft); flex-shrink:0;"></div>
+              <div style="flex:1; min-width:260px;">
+                <h3 style="margin-bottom:10px;">JIN ZHIZHOU</h3>
+                <p class="lead" style="margin:0 0 10px 0;">Former M.S. Student (Graduated in August 2025)</p>
+                <p style="margin:0;"><strong>Current Affiliation</strong><br>SK hynix Semiconductor storage technology (Dalian) Co. Ltd.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+              <div style="width:120px; height:150px; border:1px solid var(--line); border-radius:14px; background: var(--surface-soft); flex-shrink:0;"></div>
+              <div style="flex:1; min-width:260px;">
+                <h3 style="margin-bottom:10px;">TIAN RUNZE</h3>
+                <p class="lead" style="margin:0 0 10px 0;">Former M.S. Student (Graduated in August 2025)</p>
+                <p style="margin:0;"><strong>Current Status</strong><br>Currently preparing for the civil service examination</p>
+              </div>
             </div>
           </div>
         </div>
