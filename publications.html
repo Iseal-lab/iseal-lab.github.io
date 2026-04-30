@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications | i-SEAL</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .pub-section + .pub-section { margin-top: 28px; }
+    .pub-list { margin: 0; padding-left: 20px; }
+    .pub-list li { margin-bottom: 18px; }
+    .pub-list li:last-child { margin-bottom: 0; }
+    .pub-note { color: var(--muted); margin-top: 6px; }
+  </style>
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <div>
         <div class="brand-title">i-SEAL</div>
@@ -37,19 +44,49 @@
     <div class="container page-hero-inner">
       <span class="eyebrow">Publications</span>
       <h1>Publications</h1>
-      <p>Representative publications of the i-SEAL Laboratory.</p>
+      <p>Selected journal articles and conference proceedings of the i-SEAL Laboratory.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="card">
-        <p class="section-tag">Publications</p>
-        <h2>Publication list</h2>
-        <p class="lead">Publication information will be updated later.</p>
-        <ul class="list-plain">
-          <li>TBD</li>
-        </ul>
+      <div class="card pub-section">
+        <p class="section-tag">SCI</p>
+        <h2>SCI Journal Articles</h2>
+        <ol class="pub-list">
+          <li>
+            Ding, L. X., Chee, K.-W. A., Lu, H., Paul, A., Kim, J., &amp; Lee, J.-M. (2025). Unlocking precision using k-means++- improved genetic algorithm-radial basis function neural network: Data-driven evolution of smart gloves for gesture recognition. <em>Acta Scientiarum. Technology, 47</em>(1), e70901. <a href="https://doi.org/10.4025/actascitechnol.v47i1.70901">https://doi.org/10.4025/actascitechnol.v47i1.70901</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="card pub-section">
+        <p class="section-tag">Conference Proceedings</p>
+        <h2>Conference Proceedings</h2>
+        <ol class="pub-list">
+          <li>
+            Ding, L., &amp; Chee, K.-W. A. (2024). Simulation and analysis of MEMS-based flexible capacitive pressure sensors with COMSOL. In <em>2024 International Convention on Rehabilitation Engineering and Assistive Technology and World Rehabilitation Robot Convention (WRRC 2024)</em> (IEEE). <a href="https://doi.org/10.1109/WRRC62201.2024.10696480">https://doi.org/10.1109/WRRC62201.2024.10696480</a>
+          </li>
+          <li>
+            Ding, L., Chee, K.-W. A., Zheng, Y., &amp; Jin, Z. (2025). High-dielectric-constant filler effects on PVDF-based MEMS pressure sensors: A finite-element analysis. <em>IET Conference Proceedings, 2025</em>(15), 592–595. <a href="https://doi.org/10.1049/icp.2025.2626">https://doi.org/10.1049/icp.2025.2626</a>
+          </li>
+          <li>
+            Zheng, Y., &amp; Chee, K.-W. A. (2024). Advanced techniques in semiconductor defect detection and classification: Overview of current technologies and future trends in AI/ML integration. In <em>2024 International Convention on Rehabilitation Engineering and Assistive Technology and World Rehabilitation Robot Convention (WRRC 2024)</em> (IEEE). <a href="https://doi.org/10.1109/WRRC62201.2024.10696150">https://doi.org/10.1109/WRRC62201.2024.10696150</a>
+          </li>
+          <li>
+            Zheng, Y., Chee, K.-W. A., Ding, L., &amp; Jin, Z. (2025). Deep learning-based object detection in electron microscopy for semiconductor analysis: Advances, challenges, and perspectives. <em>IET Conference Proceedings, 2025</em>(15), 596–598. <a href="https://doi.org/10.1049/icp.2025.2627">https://doi.org/10.1049/icp.2025.2627</a>
+          </li>
+          <li>
+            Jin, Z., Ding, L., &amp; Zheng, Y. (2025). On the numerical simulation and visualization of optical structures in solar cells: A TCAD approach for engineering education. In A. D. K.-T. Lam, S. D. Prior, S.-T. Shen, S.-J. Young, &amp; L.-W. Ji (Eds.), <em>System innovation for a global economy: Applied System Innovation XI</em>. CRC Press. <a href="https://doi.org/10.1201/9781003655534-35">https://doi.org/10.1201/9781003655534-35</a>
+            <div class="pub-note">Oral presentation at ICASI 2025; published as a chapter in the conference volume.</div>
+          </li>
+          <li>
+            Tian, R., &amp; Chee, K.-W. A. (2025). Computer-aided design and analysis of energy conversion and data storage devices. <em>IET Conference Proceedings, 2025</em>(15), 602–604. <a href="https://doi.org/10.1049/icp.2025.2629">https://doi.org/10.1049/icp.2025.2629</a>
+          </li>
+          <li>
+            Ding, Z., &amp; Chee, K.-W. A. (2025). Intelligent material synthesis and device engineering for next-generation power electronics. <em>IET Conference Proceedings, 2025</em>(15), 599–601. <a href="https://doi.org/10.1049/icp.2025.2628">https://doi.org/10.1049/icp.2025.2628</a>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
@@ -61,6 +98,6 @@
     </div>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
