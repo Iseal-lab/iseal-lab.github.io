@@ -19,14 +19,17 @@
     .member-photo {
       width: 180px;
       aspect-ratio: 3 / 4;
-      border: 1px dashed var(--line);
+      border: 1px solid var(--line);
       border-radius: 14px;
       background: var(--surface-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.95rem;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .member-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .member-meta p {
       margin: 0 0 10px;
@@ -76,7 +79,7 @@
       <div class="member-stack">
         <div class="card">
           <div class="member-row">
-            <div class="member-photo">Photo</div>
+            <div class="member-photo"><img src="images/GETASEW.jpg" alt="YEHUALA GETASEW ASSEFA"></div>
             <div class="member-meta">
               <p class="section-tag">Master’s Student</p>
               <h2 style="margin-bottom: 10px;">YEHUALA GETASEW ASSEFA</h2>
@@ -88,7 +91,7 @@
 
         <div class="card">
           <div class="member-row">
-            <div class="member-photo">Photo</div>
+            <div class="member-photo"><img src="images/DINGZHENYU.jpg" alt="DING ZHENYU"></div>
             <div class="member-meta">
               <p class="section-tag">Master’s Student</p>
               <h2 style="margin-bottom: 10px;">DING ZHENYU</h2>
