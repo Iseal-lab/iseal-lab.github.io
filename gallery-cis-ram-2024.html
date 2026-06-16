@@ -6,25 +6,47 @@
   <title>CIS-RAM 2024 | i-SEAL</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .gallery-placeholder-grid {
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
       margin-top: 24px;
+      align-items: start;
     }
-    .gallery-placeholder {
-      min-height: 180px;
-      border: 1px dashed var(--line);
+    .gallery-item {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
       border-radius: 16px;
-      background: var(--surface-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      align-self: start;
+    }
+    .gallery-item a {
+      display: block;
+      background: #f3f6fb;
+      text-decoration: none;
+    }
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .gallery-item figcaption {
+      padding: 12px 14px;
       color: var(--muted);
-      padding: 18px;
+      font-size: 0.95rem;
     }
     .gallery-note { color: var(--muted); margin-top: 12px; }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item img { height: 210px; }
+    }
   </style>
 </head>
 <body>
@@ -76,13 +98,22 @@
       <div class="card">
         <p class="section-tag">Conference</p>
         <h2>CIS-RAM 2024</h2>
-        <p class="lead">This page will present selected photos from the CIS-RAM 2024 conference activities.</p>
-        <div class="gallery-placeholder-grid">
-          <div class="gallery-placeholder">Photo 1<br>To be added</div>
-          <div class="gallery-placeholder">Photo 2<br>To be added</div>
-          <div class="gallery-placeholder">Photo 3<br>To be added</div>
+        <p class="lead">Selected photos from CIS-RAM 2024 conference activities. Click a photo to view it in full size.</p>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <a href="/images/gallery/conference/CIS-RAM2024_1.jpg" target="_blank" rel="noopener">
+              <img src="/images/gallery/conference/CIS-RAM2024_1.jpg" alt="CIS-RAM 2024 1">
+            </a>
+            <figcaption>CIS-RAM 2024</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <a href="/images/gallery/conference/CIS-RAM2024_2.jpg" target="_blank" rel="noopener">
+              <img src="/images/gallery/conference/CIS-RAM2024_2.jpg" alt="CIS-RAM 2024 2">
+            </a>
+            <figcaption>CIS-RAM 2024</figcaption>
+          </figure>
         </div>
-        <p class="gallery-note">Image folder suggestion: <code>images/gallery/conference/cis-ram-2024/</code></p>
+        <p class="gallery-note">Images are loaded from <code>images/gallery/conference/</code>.</p>
       </div>
     </div>
   </section>
