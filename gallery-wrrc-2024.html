@@ -20,11 +20,16 @@
       background: var(--surface);
       box-shadow: var(--shadow);
     }
+    .gallery-item a {
+      display: block;
+      background: #f3f6fb;
+      text-decoration: none;
+    }
     .gallery-item img {
       display: block;
       width: 100%;
-      height: 220px;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
     }
     .gallery-item figcaption {
       padding: 12px 14px;
@@ -37,7 +42,6 @@
     }
     @media (max-width: 620px) {
       .gallery-grid { grid-template-columns: 1fr; }
-      .gallery-item img { height: 210px; }
     }
   </style>
 </head>
@@ -90,25 +94,26 @@
       <div class="card">
         <p class="section-tag">Conference</p>
         <h2>WRRC 2024</h2>
-        <p class="lead">Selected photos from WRRC 2024 conference activities.</p>
+        <p class="lead">Selected photos from WRRC 2024 conference activities. Click a photo to view it in full size.</p>
         <div class="gallery-grid">
           <figure class="gallery-item">
-            <img src="images/gallery/conference/WRRC2024_1.jpg" alt="WRRC 2024 Conference 1">
+            <a href="/images/gallery/conference/WRRC2024_1.jpg" target="_blank" rel="noopener"><img src="/images/gallery/conference/WRRC2024_1.jpg" alt="WRRC 2024 Conference 1"></a>
             <figcaption>WRRC 2024</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/conference/WRRC2024_2.jpg" alt="WRRC 2024 Conference 2">
+            <a href="/images/gallery/conference/WRRC2024_2.jpg" target="_blank" rel="noopener"><img src="/images/gallery/conference/WRRC2024_2.jpg" alt="WRRC 2024 Conference 2"></a>
             <figcaption>WRRC 2024</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/conference/WRRC2024_3.jpg" alt="WRRC 2024 Conference 3">
+            <a href="/images/gallery/conference/WRRC2024_3.jpg" target="_blank" rel="noopener"><img src="/images/gallery/conference/WRRC2024_3.jpg" alt="WRRC 2024 Conference 3"></a>
             <figcaption>WRRC 2024</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/conference/WRRC2024_4.jpg" alt="WRRC 2024 Conference 4">
+            <a href="/images/gallery/conference/WRRC2024_4.jpg" target="_blank" rel="noopener"><img src="/images/gallery/conference/WRRC2024_4.jpg" alt="WRRC 2024 Conference 4"></a>
             <figcaption>WRRC 2024</figcaption>
           </figure>
         </div>
+        <p class="gallery-note">Images are loaded from <code>images/gallery/conference/</code>.</p>
       </div>
     </div>
   </section>

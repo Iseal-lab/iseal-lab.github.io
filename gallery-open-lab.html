@@ -20,11 +20,16 @@
       background: var(--surface);
       box-shadow: var(--shadow);
     }
+    .gallery-item a {
+      display: block;
+      background: #f3f6fb;
+      text-decoration: none;
+    }
     .gallery-item img {
       display: block;
       width: 100%;
-      height: 220px;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
     }
     .gallery-item figcaption {
       padding: 12px 14px;
@@ -37,7 +42,6 @@
     }
     @media (max-width: 620px) {
       .gallery-grid { grid-template-columns: 1fr; }
-      .gallery-item img { height: 210px; }
     }
   </style>
 </head>
@@ -90,26 +94,26 @@
       <div class="card">
         <p class="section-tag">Open Lab</p>
         <h2>Open Lab Meetings</h2>
-        <p class="lead">Selected photos from open lab meetings and laboratory-related academic activities.</p>
+        <p class="lead">Selected photos from open lab meetings and laboratory-related academic activities. Click a photo to view it in full size.</p>
         <div class="gallery-grid">
           <figure class="gallery-item">
-            <img src="images/gallery/open-lab/OPENLAB_1.jpg" alt="Open Lab Meeting 1">
+            <a href="/images/gallery/open-lab/OPENLAB_1.jpg" target="_blank" rel="noopener"><img src="/images/gallery/open-lab/OPENLAB_1.jpg" alt="Open Lab Meeting 1"></a>
             <figcaption>Open Lab Meeting</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/open-lab/OPENLAB_2.jpg" alt="Open Lab Meeting 2">
+            <a href="/images/gallery/open-lab/OPENLAB_2.jpg" target="_blank" rel="noopener"><img src="/images/gallery/open-lab/OPENLAB_2.jpg" alt="Open Lab Meeting 2"></a>
             <figcaption>Open Lab Meeting</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/open-lab/OPENLAB_3.jpg" alt="Open Lab Meeting 3">
+            <a href="/images/gallery/open-lab/OPENLAB_3.jpg" target="_blank" rel="noopener"><img src="/images/gallery/open-lab/OPENLAB_3.jpg" alt="Open Lab Meeting 3"></a>
             <figcaption>Open Lab Meeting</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/open-lab/OPENLAB_4.jpg" alt="Open Lab Meeting 4">
+            <a href="/images/gallery/open-lab/OPENLAB_4.jpg" target="_blank" rel="noopener"><img src="/images/gallery/open-lab/OPENLAB_4.jpg" alt="Open Lab Meeting 4"></a>
             <figcaption>Open Lab Meeting</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="images/gallery/open-lab/OPENLAB_5.jpg" alt="Open Lab Meeting 5">
+            <a href="/images/gallery/open-lab/OPENLAB_5.jpg" target="_blank" rel="noopener"><img src="/images/gallery/open-lab/OPENLAB_5.jpg" alt="Open Lab Meeting 5"></a>
             <figcaption>Open Lab Meeting</figcaption>
           </figure>
         </div>
