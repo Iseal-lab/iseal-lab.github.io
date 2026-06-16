@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS-RAM 2024 | i-SEAL</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .gallery-placeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .gallery-placeholder {
+      min-height: 180px;
+      border: 1px dashed var(--line);
+      border-radius: 16px;
+      background: var(--surface-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--muted);
+      padding: 18px;
+    }
+    .gallery-note { color: var(--muted); margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <div class="brand-title">i-SEAL</div>
+        <div class="brand-sub">Kyungpook National University</div>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button">Members</button>
+            <ul class="dropdown-menu">
+              <li><a href="professor.html">Professor</a></li>
+              <li><a href="phd.html">Ph.D. Students</a></li>
+              <li><a href="ms.html">M.S. Students</a></li>
+              <li><a href="alumni.html">Alumni</a></li>
+            </ul>
+          </li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle active" type="button">Gallery</button>
+            <ul class="dropdown-menu">
+              <li><a href="gallery-open-lab.html">Open Lab Meetings</a></li>
+              <li><a href="gallery-wrrc-2024.html">WRRC 2024</a></li>
+              <li><a href="gallery-cis-ram-2024.html" class="active">CIS-RAM 2024</a></li>
+              <li><a href="gallery-icasi-2025.html">ICASI 2025</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="eyebrow">Gallery</span>
+      <h1>CIS-RAM 2024</h1>
+      <p>Conference activity photos from CIS-RAM 2024.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <p class="section-tag">Conference</p>
+        <h2>CIS-RAM 2024</h2>
+        <p class="lead">This page will present selected photos from the CIS-RAM 2024 conference activities.</p>
+        <div class="gallery-placeholder-grid">
+          <div class="gallery-placeholder">Photo 1<br>To be added</div>
+          <div class="gallery-placeholder">Photo 2<br>To be added</div>
+          <div class="gallery-placeholder">Photo 3<br>To be added</div>
+        </div>
+        <p class="gallery-note">Image folder suggestion: <code>images/gallery/conference/cis-ram-2024/</code></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> i-SEAL Laboratory</div>
+      <div>Next-Generation Intelligent Semiconductor Energy Engineering and Analysis Laboratory</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
